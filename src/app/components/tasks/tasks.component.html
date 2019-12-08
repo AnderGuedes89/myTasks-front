@@ -1,0 +1,83 @@
+<nav>
+  <div class="nav-wrapper">
+    <ul>
+      <li class="brand-logo center">myTasks</li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row row-form">
+        <div class="container">
+        <div class="input-field col s10">
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Nova Tarefa</label>
+        </div>
+        <div class="input-field col s2">
+          <a class="waves-effect waves-light btn">New</a>
+        </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-content white-text">
+          <span class="card-title center">TO DO</span>
+        </div>
+        <div class="card-content contents">
+          <div *ngFor="let task of allTasks">
+            <div class="row row-task">
+              <span class="items">Tarefa:</span>
+              <p>{{task.title}}</p>
+            </div>
+            <div class="row row-icon">
+              <i class="material-icons" title="Deletar">highlight_off</i>
+              <i class="material-icons" title="Informações">error_outline</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card under-development">
+        <div class="card-content white-text">
+          <span class="card-title center">DOING</span>
+        </div>
+        <div class="card-content contents">
+          <div>
+            <img src="assets/images/under-development.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card under-development">
+        <div class="card-content white-text">
+          <span class="card-title center">DONE</span>
+        </div>
+        <div class="card-content contents">
+          <img src="assets/images/under-development.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <div *ngFor="let task of allTasks">
+  <h1>{{task.title}}</h1>
+  <h2>{{task.tasks}}</h2>
+</div> -->

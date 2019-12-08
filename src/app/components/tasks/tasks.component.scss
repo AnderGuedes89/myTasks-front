@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+.nav-wrapper {
+  font-family: 'Indie Flower', cursive;
+  background-color: #901DBE;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #901DBE;
+  -webkit-box-shadow: 0 1px 0 0 #901DBE;
+  box-shadow: 0 1px 0 0 #901DBE;
+}
+
+.active {
+  color: #901DBE !important;
+}
+
+.row-form {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.btn {
+  background-color: #901DBE;
+}
+
+.card-title {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 0px !important;
+}
+
+.under-development {
+  height: 380px;
+
+  img {
+    height: 150px;
+  }
+}
+
+.card-content {
+  background-color: #901DBE;
+
+}
+
+.contents {
+  background-color: #FFFFFF;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.items {
+  font-size: 11px;
+  color: #901DBE;
+}
+
+.material-icons {
+  color: #901DBE !important;
+  cursor: pointer;
+}
+
+.row-task {
+  margin-bottom: 0px;
+}
+
+.row-icon {
+  margin-bottom: 10px;
+}
